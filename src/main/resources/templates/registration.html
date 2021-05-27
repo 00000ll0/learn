@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <div>
+                <form th:action="@{/registration}" th:object="${userForm}" method="post">
+                    <h2>Регистрация</h2>
+                    <div>
+                        <input type="text" name="username" th:field="*{username}" placeholder="Username"/>
+                        <input type="password" name="password" th:field="*{password}" placeholder="Password"/>
+                    </div>
+                        <button type="submit">Зарегистрироваться</button>
+                </form>
+            <a href="/">Главная</a>
+        </div>
+    </body>
+</html>

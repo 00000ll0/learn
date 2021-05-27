@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Контакты</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+
+    <header th:insert="blocks/header ::header"></header>
+
+    <div class="container mt-3"></div>
+    <h2>Как нас найти</h2>
+    <p>Мы находимся по адресу г.Благовещенск Горького 156, тц "Куб", 2 секция
+    <br>Вы можете связвться с нами:
+        <br> По телефону 340-333
+        <br> Через what's upp 8-963-814-03-033
+        <br> Через  <a href="https://www.instagram.com/quest_blag/">инстаграмм</a>
+
+
+    </p>
+    <div align="center" style="position:relative;left:15;overflow:hidden;">
+        <a href="https://yandex.ru/maps/org/kvesty_na_grani/1701340954/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Квесты на грани</a>
+        <a href="https://yandex.ru/maps/77/blagoveshchensk/category/quests/56396710895/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Квесты в Благовещенске</a>
+        <a href="https://yandex.ru/maps/77/blagoveshchensk/category/children_and_teenagers_clubs/184107202/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Клуб для детей и подростков в Благовещенске</a>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUaEHEdTD" width="560" height="400" frameborder="1" allowfullscreen="true"  style="position:relative;"></iframe>
+    </div>
+    <footer th:insert="blocks/footer ::footer"></footer>
+    </body>
+</html>
